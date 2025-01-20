@@ -1,8 +1,9 @@
 # Delete Control Tower VPC
 
 This Python script automates the deletion of VPCs and associated resources created by AWS Control Tower. It removes:
-1. **NAT Gateways** in the identified VPCs.
-2. **VPC Flow Logs** and their destinations (CloudWatch Log Groups or S3).
+1. **VPC Flow Logs** and their destinations (CloudWatch Log Groups or S3).
+2. All VPC dependencies in the identified VPCs. Including: NAT Gateways, Subnets,
+   Security Groups, Network ACLs, Internet Gateways, Route Tables, and VPC Endpoints
 
 [Related Incident Report](https://docs.google.com/document/d/1ZunI43UP89DUdgK5cBsRmQEHRWfMlAK80KZoLOdOg3o/edit?usp=sharing)
 
